@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Sophia</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <script>
+        window.onload = function() {
+            document.getElementById('ano').textContent = new Date().getFullYear();
+        };
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>Sophia - Portfólio Pessoal</h1>
+        <nav>
+            <a href="#sobre">Sobre</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+    
+    <main class="area-conteudo">
+        <section id="sobre" class="card">
+            <h2>Sobre mim</h2>
+            <div class="sobre-layout">
+                <div class="minha-foto">
+                    <img src="img/foto.jpg" alt="Foto da Sophia" onerror="this.style.display='none'">
+                </div>
+                <div class="texto-sobre">
+                    <p>Olá! Meu nome é Sophia. Tenho 16 anos e estudo no curso técnico integrado no **IFCE - Campus Maranguape**.</p>
+                    <p>Nasci em Maracanau e atualmente moro em Maranguape.</p>
+                    <p>Eu gosto muito de jogar vôlei e também faço academia. No futuro, pretendo abrir meu próprio negócio.</p>
+                    <p>Este é um portfólio simples para mostrar meus projetos e habilidades da disciplina de Desenvolvimento Web I.</p>
+                </div>
+            </div>
+        </section>
+
+        ---
+
+        <section id="projetos" class="card">
+            <h2>Projetos</h2>
+
+            <ul>
+                <li><a href="#" target="_blank">Portfólio Pessoal (Este Site)</a></li>
+                <li><a href="#" target="_blank">Projeto POO — repositório no GitHub</a></li>
+                <li><a href="#" target="_blank">Projeto figma</a></li>
+            </ul>
+        </section>
+
+        ---
+
+        <section id="habilidades" class="card">
+            <h2>Habilidades</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Java Script</th>
+                        <th>Intermediário</th>
+                        <th>4 meses</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML</td>
+                        <td>Intermediário</td>
+                        <td>4 meses</td>
+                    </tr>
+
+                    <tr>
+                        <td>CSS (Flexbox)</td>
+                        <td>Intermediário</td>
+                        <td>4 meses</td>
+                    </tr>
+
+                    <tr>
+                        <td>Git / GitHub</td>
+                        <td>Básico</td>
+                        <td>4 meses</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        ---
+        
+        <section id="contato" class="card">
+            <h2>Contato</h2>
+
+            <form action="#" method="POST" class="form-contato" onsubmit="alert('Formulário de exemplo — sem envio real.'); return false;">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required placeholder="Seu nome completo">
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required placeholder="exemplo@email.com">
+
+                <label for="assunto">Assunto:</label>
+                <input type="text" id="assunto" name="assunto" required placeholder="Ex: Dúvida sobre projetos ou colaboração">
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="5" required placeholder="Escreva sua mensagem aqui..."></textarea>
+
+                <button type="submit" class="btn-enviar">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por Sophia • IFCE Maranguape • &copy; <span id="ano"></span></p>
+    </footer>
+
+</body>
+</html>
